@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Notes = React.lazy(() => import("notes/App"));
+const Notes = React.lazy(() => import('notes/App'));
 
 const App = () => {
   return (
