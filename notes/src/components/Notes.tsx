@@ -1,7 +1,7 @@
-import React from "react";
-import { selectNotes } from "../store/features/notesSlice";
-import { useAppSelector } from "../store/hooks";
-import NoteCard from "./NoteCard";
+import React from 'react';
+import { selectNotes } from '../store/features/notesSlice';
+import { useAppSelector } from '../store/hooks';
+import NoteCard from './NoteCard';
 
 const Notes = () => {
   const notes = useAppSelector(selectNotes);

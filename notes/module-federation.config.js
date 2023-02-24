@@ -1,21 +1,21 @@
-const { dependencies } = require("./package.json");
+const { dependencies } = require('./package.json');
 
 module.exports = {
-  name: "notes",
+  name: 'notes',
   exposes: {
-    "./App": "./src/App",
+    './App': './src/App',
   },
-  filename: "remoteEntry.js",
+  filename: 'remoteEntry.js',
   shared: {
     ...dependencies,
     react: {
       singleton: true,
-      requiredVersion: dependencies["react"],
+      requiredVersion: dependencies['react'],
       eager: true,
     },
-    "react-dom": {
+    'react-dom': {
       singleton: true,
-      requiredVersion: dependencies["react-dom"],
+      requiredVersion: dependencies['react-dom'],
       eager: true,
     },
   },

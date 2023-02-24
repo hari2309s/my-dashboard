@@ -1,14 +1,14 @@
-const { ModuleFederationPlugin } = require("webpack").container;
+const { ModuleFederationPlugin } = require('webpack').container;
 
-const webpackConfigPath = "react-scripts/config/webpack.config";
+const webpackConfigPath = 'react-scripts/config/webpack.config';
 const webpackConfig = require(webpackConfigPath);
 
 const override = (config) => {
   config.plugins.push(
-    new ModuleFederationPlugin(require("../../module-federation.config.js"))
+    new ModuleFederationPlugin(require('../../module-federation.config.js'))
   );
 
-  config.output.publicPath = "auto";
+  config.output.publicPath = 'auto';
 
   return config;
 };

@@ -1,7 +1,7 @@
-import styled from "@emotion/styled";
-import React from "react";
-import CreateNote from "./components/CreateNote";
-import Notes from "./components/Notes";
+import styled from '@emotion/styled';
+import React from 'react';
+import CreateNote from './components/CreateNote';
+import Notes from './components/Notes';
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
 };
 
 const Container = styled.div({
-  display: "flex",
-  justifyContent: "center",
+  display: 'flex',
+  justifyContent: 'center',
 });
 
 export default App;

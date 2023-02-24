@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "../store";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '../store';
 
 export interface Note {
   id: string;
@@ -16,7 +16,7 @@ const initialState: NotesState = {
 };
 
 export const notesSlice = createSlice({
-  name: "notes",
+  name: 'notes',
   initialState,
   reducers: {
     createNote: (state, action: PayloadAction<Note>) => {

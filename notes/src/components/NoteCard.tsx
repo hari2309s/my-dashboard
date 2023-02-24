@@ -1,5 +1,6 @@
-import styled from "@emotion/styled";
-import { Note } from "../store/features/notesSlice";
+import React from 'react';
+import styled from '@emotion/styled';
+import { Note } from '../store/features/notesSlice';
 
 interface NoteProps {
   note: Note;
@@ -10,14 +11,14 @@ const NoteCard = ({ note }: NoteProps) => {
 };
 
 const Container = styled.div({
-  width: "200px",
-  height: "200px",
-  backgroundColor: "#84A59D",
-  borderRadius: "3px",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
+  width: '200px',
+  height: '200px',
+  backgroundColor: '#84A59D',
+  borderRadius: '3px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
 });
 
 export default NoteCard;
